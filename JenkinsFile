@@ -1,10 +1,13 @@
-pipeline {
-  agent any
-  stages {
-    stage('Get Code') {
-      steps {
-        git(url: 'https://github.com/narasimhavuppala/bdd-cucumber-java-demos.git', branch: 'master')
-      }
-    }
-  }
+node {
+stage (‘SCM checkout’){
+git “https://github.com/ghoshchandan19/BDDSelenium”
+}
+stage (‘Build’){
+dir(“comtest”) {
+sh “mvn clean install”
+}
+dir(“/target”) {
+sh “java -jar EcommerceApp-0.0.1-SNAPSHOT.jar”
+}
+}
 }
