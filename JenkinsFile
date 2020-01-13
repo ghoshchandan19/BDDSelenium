@@ -1,6 +1,6 @@
 node {
 stage (‘SCM checkout’){
-git “https://github.com/ghoshchandan19/BDDSelenium”
+git “https://github.com/ghoshchandan19/BDDSelenium.git”
 }
 stage (‘Build’){
 dir(“comtest”) {
