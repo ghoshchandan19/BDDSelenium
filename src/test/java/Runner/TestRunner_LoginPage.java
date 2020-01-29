@@ -5,6 +5,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.cucumber.listener.Reporter;
+
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.PickleEventWrapper;
@@ -12,8 +14,8 @@ import cucumber.api.testng.TestNGCucumberRunner;
 
 @CucumberOptions(
 
-		features = "src/test/resources/Features/AkashLogin.feature", glue = { "StepDefintions"},
-plugin = {"pretty", "html:target/cucumber-reports/cucumber-pretty","json:target/cucumber-reports/CucumberTestReport.json", "rerun:target/cucumber-reports/rerun.txt" }
+		features = "src/test/resources/Features/AkashLogin.feature", glue = { "StepDefintions"}
+//plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"}
 
 )
 public class TestRunner_LoginPage {
@@ -46,6 +48,7 @@ public class TestRunner_LoginPage {
 
 	@AfterClass(alwaysRun = true)
 	public void tearDownClass() throws Exception {
+		//Reporter.loadXMLConfig("src/test/resources/extentConfig.xml");
 		testNGCucumberRunner.finish();
 
 	}

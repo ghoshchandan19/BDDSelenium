@@ -1,9 +1,8 @@
 package PageActions;
 
+import Pages.AkashLoginPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
-
-import Pages.AkashLoginPage;
 //Action for the login page
 public class AkashLoginFeature {
 	
@@ -17,10 +16,11 @@ public class AkashLoginFeature {
 		
 	}
 	
-	public void getTitle()
+	public String getTitle()
 	{
 		String titlePage = driver.getTitle();
 		System.out.println("Ttile of the page"+ titlePage);
+		return titlePage;
 	}
 	
 	public void enterLoginCred(String username,String password)

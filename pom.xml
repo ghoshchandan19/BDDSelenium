@@ -5,6 +5,7 @@
 	<groupId>com.ghosh.cucumber</groupId>
 	<artifactId>EcommerceApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
 
 	<build>
 		<plugins>
@@ -25,13 +26,23 @@
 				<version>2.19.1</version>
 				<configuration>
 					<!-- <source>1.8</source> <target>1.8</target> -->
-					
+					<useFile>false</useFile>
+					<suiteXmlFiles>
+						<!-- src/test/resources/testSuites/testng.xml -->
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+
+
+
+
 				</configuration>
 				
-
-
 			</plugin>
+
+
+
 		</plugins>
+		
 
 	</build>
 	<dependencies>
@@ -94,37 +105,27 @@
 			<version>3.6.1</version>
 		</dependency>
 		<dependency>
-			<groupId>com.aventstack</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>3.0.6</version>
-		</dependency>
+            <groupId>com.vimalselvam</groupId>
+            <artifactId>cucumber-extentsreport</artifactId>
+            <version>3.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>4.0.8</version>
+        </dependency>
+		
 
-		<dependency>
-			<groupId>com.vimalselvam</groupId>
-			<artifactId>cucumber-extentsreport</artifactId>
-			<version>3.0.2</version>
-		</dependency>
-		<dependency>
-			<groupId>ru.yandex.qatools.allure</groupId>
-			<artifactId>allure-cucumber-jvm-adaptor</artifactId>
-			<version>1.6.2</version>
-		</dependency>
-
-
-
-
-
+		
 
 	</dependencies>
-	<reporting>
-		<excludeDefaults>true</excludeDefaults>
-		<plugins>
-			<plugin>
-				<groupId>ru.yandex.qatools.allure</groupId>
-				<artifactId>allure-maven-plugin</artifactId>
-				<version>2.5</version>
-			</plugin>
-		</plugins>
-	</reporting>
+
+
+
+
+
+
+
+
 
 </project>

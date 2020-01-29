@@ -1,18 +1,21 @@
 package StepDefintions;
 
+import org.openqa.selenium.WebDriver;
+
 import PageActions.ChangePasswordFeature;
-import Utils.TestBase;
 import cucumber.api.java.en.Then;
 
-public class ChangePasswordSteps extends TestBase{
-	
+public class ChangePasswordSteps {
+
 	ChangePasswordFeature cpf;
+	private WebDriver driver;
+
 	@Then("User Clicks on change password from dropdown")
 	public void user_Clicks_on_change_password_from_dropdown() throws InterruptedException {
-	
-	cpf = new ChangePasswordFeature(driver);
-	cpf.clickDropDown();
-	Thread.sleep(4000);
+
+		cpf = new ChangePasswordFeature(driver);
+		cpf.clickDropDown();
+		Thread.sleep(4000);
 	}
 
 	@Then("User clicks on change password")
@@ -22,7 +25,7 @@ public class ChangePasswordSteps extends TestBase{
 
 	@Then("User gets message {string}")
 	public void user_gets_message(String string) {
-	    
+
 	}
 
 }

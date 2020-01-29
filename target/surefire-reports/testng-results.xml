@@ -2,25 +2,22 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[Url is navigated]]>
-    </line>
-    <line>
       <![CDATA[Credentials entered]]>
     </line>
     <line>
       <![CDATA[Login button Clicked]]>
     </line>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="6627" started-at="2019-10-25T07:15:41Z" finished-at="2019-10-25T07:15:48Z">
+  <suite name="Suite" duration-ms="15324" started-at="2020-01-29T11:53:36Z" finished-at="2020-01-29T11:53:51Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="6627" started-at="2019-10-25T07:15:41Z" finished-at="2019-10-25T07:15:48Z">
+    <test name="Test" duration-ms="15324" started-at="2020-01-29T11:53:36Z" finished-at="2020-01-29T11:53:51Z">
       <class name="Runner.TestRunner_LoginPage">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runner.TestRunner_LoginPage@6537cf78]" name="setUpClass" is-config="true" duration-ms="118" started-at="2019-10-25T07:15:41Z" finished-at="2019-10-25T07:15:41Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runner.TestRunner_LoginPage@735b478]" name="setUpClass" is-config="true" duration-ms="92" started-at="2020-01-29T11:53:36Z" finished-at="2020-01-29T11:53:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.TestRunner_LoginPage@6537cf78]" name="feature" duration-ms="6442" started-at="2019-10-25T07:15:41Z" data-provider="features" finished-at="2019-10-25T07:15:48Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.TestRunner_LoginPage@735b478]" name="feature" duration-ms="15058" started-at="2020-01-29T11:53:36Z" data-provider="features" finished-at="2020-01-29T11:53:51Z">
           <params>
             <param index="0">
               <value>
@@ -35,9 +32,6 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Url is navigated]]>
-            </line>
-            <line>
               <![CDATA[Credentials entered]]>
             </line>
             <line>
@@ -45,11 +39,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runner.TestRunner_LoginPage@6537cf78]" name="tearDownClass" is-config="true" duration-ms="5" started-at="2019-10-25T07:15:48Z" finished-at="2019-10-25T07:15:48Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runner.TestRunner_LoginPage@735b478]" name="tearDownClass" is-config="true" duration-ms="11" started-at="2020-01-29T11:53:51Z" finished-at="2020-01-29T11:53:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- Runner.TestRunner_LoginPage -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
