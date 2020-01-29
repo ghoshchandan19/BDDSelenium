@@ -9,7 +9,7 @@
       <class name="Runner.TestRunner_LoginPage">
         <methods>
           <include name="tearDownClass"/>
-          <include name="feature"/>
+          <include name="feature" invocation-numbers="0"/>
           <include name="setUpClass"/>
         </methods>
       </class> <!-- Runner.TestRunner_LoginPage -->
