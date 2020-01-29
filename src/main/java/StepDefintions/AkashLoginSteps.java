@@ -97,14 +97,15 @@ public class AkashLoginSteps extends ExtentReportListener {
 
 			logInfo = test.createNode(new GherkinKeyword("Then"), "user_succesfully_logins_into_the_application");
 			alf.getTitle();
-			
+			Assert.fail();
 			
 			logInfo.pass("User Clicked on Login Button");
 		} catch (AssertionError | Exception e) {
 			testStepHandle("FAIL", driver, logInfo, e);
+			
 		}
 		
-		Assert.fail();
+		
 		
 	}
 

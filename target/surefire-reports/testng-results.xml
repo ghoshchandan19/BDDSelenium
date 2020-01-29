@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
       <![CDATA[Credentials entered]]>
@@ -8,16 +8,16 @@
       <![CDATA[Login button Clicked]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="13764" started-at="2020-01-29T17:36:41Z" finished-at="2020-01-29T17:36:55Z">
+  <suite name="Suite" duration-ms="15051" started-at="2020-01-29T17:46:55Z" finished-at="2020-01-29T17:47:10Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="13764" started-at="2020-01-29T17:36:41Z" finished-at="2020-01-29T17:36:55Z">
+    <test name="Test" duration-ms="15051" started-at="2020-01-29T17:46:55Z" finished-at="2020-01-29T17:47:10Z">
       <class name="Runner.TestRunner_LoginPage">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runner.TestRunner_LoginPage@735b478]" name="setUpClass" is-config="true" duration-ms="149" started-at="2020-01-29T17:36:42Z" finished-at="2020-01-29T17:36:42Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runner.TestRunner_LoginPage@735b478]" name="setUpClass" is-config="true" duration-ms="163" started-at="2020-01-29T17:46:55Z" finished-at="2020-01-29T17:46:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.TestRunner_LoginPage@735b478]" name="feature" duration-ms="13246" started-at="2020-01-29T17:36:42Z" data-provider="features" finished-at="2020-01-29T17:36:55Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.TestRunner_LoginPage@735b478]" name="feature" duration-ms="14619" started-at="2020-01-29T17:46:55Z" data-provider="features" finished-at="2020-01-29T17:47:10Z">
           <params>
             <param index="0">
               <value>
@@ -30,19 +30,6 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.fail(Assert.java:103)
-at StepDefintions.AkashLoginSteps.user_succesfully_logins_into_the_application(AkashLoginSteps.java:107)
-at ✽.User succesfully logins into the application(src/test/resources/Features/AkashLogin.feature:12)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
               <![CDATA[Credentials entered]]>
@@ -52,7 +39,7 @@ at ✽.User succesfully logins into the application(src/test/resources/Features/
             </line>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runner.TestRunner_LoginPage@735b478]" name="tearDownClass" is-config="true" duration-ms="5" started-at="2020-01-29T17:36:55Z" finished-at="2020-01-29T17:36:55Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runner.TestRunner_LoginPage@735b478]" name="tearDownClass" is-config="true" duration-ms="11" started-at="2020-01-29T17:47:10Z" finished-at="2020-01-29T17:47:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
